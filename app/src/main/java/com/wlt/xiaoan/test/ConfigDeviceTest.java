@@ -31,6 +31,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.wlt.xiaoan.test.ble.BluetoothLeService;
 import com.wlt.xiaoan.test.utils.DateUtils;
 import com.wlt.xiaoan.test.utils.DigitalTrans;
 import com.wlt.xiaoan.test.utils.Logger;
@@ -219,6 +220,7 @@ public class ConfigDeviceTest extends ActionBarActivity implements View.OnClickL
         mBluetoothLeService.disconnect();
         mBluetoothAdapter.stopLeScan(mLeScanCallback);
         mBluetoothAdapter = null;
+        mBluetoothLeService.stopSelf();
     }
 
     private int state = 1;

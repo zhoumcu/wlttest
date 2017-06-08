@@ -304,6 +304,7 @@ public class DigitalTrans {
      */
     public static final byte[] hex2byte(String hex)
             throws IllegalArgumentException {
+        if(hex==null) return null;
         if (hex.length() % 2 != 0) {
             throw new IllegalArgumentException();
         }

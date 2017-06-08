@@ -14,11 +14,6 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ConfigDeviceTest"
             android:configChanges="orientation|keyboardHidden|screenSize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize">
@@ -28,7 +23,15 @@
                 <!--<category android:name="android.intent.category.LAUNCHER" />-->
             <!--</intent-filter>-->
         </activity>
-        <service android:name=".BluetoothLeService" android:enabled="true"/>
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CheckDeviceTest"/>
+        <service android:name=".ble.BluetoothLeService" android:enabled="true"/>
     </application>
 
 </manifest>

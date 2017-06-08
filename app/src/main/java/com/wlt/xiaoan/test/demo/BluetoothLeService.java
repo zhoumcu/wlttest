@@ -32,8 +32,8 @@ import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
-import com.wlt.xiaoan.test.MyBluetoothDevice;
-import com.wlt.xiaoan.test.SampleGattAttributes;
+import com.wlt.xiaoan.test.ble.MyBluetoothDevice;
+import com.wlt.xiaoan.test.ble.SampleGattAttributes;
 import com.wlt.xiaoan.test.utils.Constants;
 import com.wlt.xiaoan.test.utils.Logger;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.wlt.xiaoan.test;
+package com.wlt.xiaoan.test.ble;
 
 import java.util.HashMap;
 

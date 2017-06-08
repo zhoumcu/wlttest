@@ -1,4 +1,4 @@
-package com.wlt.xiaoan.test;
+package com.wlt.xiaoan.test.ble;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -46,7 +46,7 @@ public class MyBluetoothDevice implements Serializable {
 
     private BluetoothAdapter mBluetoothAdapter;
 
-    private  BluetoothLeService mBluetoothLeService;
+    private BluetoothLeService mBluetoothLeService;
     /**
      * 请求连接
      */

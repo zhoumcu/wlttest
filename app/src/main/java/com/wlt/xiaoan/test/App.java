@@ -44,13 +44,11 @@ public class App extends Application implements TextToSpeech.OnInitListener{
         //deviceDao= new DeviceDao(this);
         textToSpeech = new TextToSpeech(this, this);
     }
-    public void add(String str)
-    {
+    public void add(String str) {
         textToSpeech.addSpeech(str,"test");
         speak(str);
     }
-    public void speak(String text)
-    {
+    public void speak(String text) {
         if(!textToSpeech.isSpeaking())
             textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH,null);
     }

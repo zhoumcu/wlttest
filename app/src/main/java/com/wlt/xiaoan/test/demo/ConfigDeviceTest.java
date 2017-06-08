@@ -32,7 +32,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.wlt.xiaoan.test.App;
-import com.wlt.xiaoan.test.BluetoothLeService;
+import com.wlt.xiaoan.test.ble.BluetoothLeService;
 import com.wlt.xiaoan.test.R;
 import com.wlt.xiaoan.test.utils.DateUtils;
 import com.wlt.xiaoan.test.utils.DigitalTrans;
